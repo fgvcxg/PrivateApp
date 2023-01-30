@@ -20,7 +20,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <Button
-            android:id="@+id/btn1"
+            android:id="@+id/memobtn"
             android:layout_width="131dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -28,7 +28,7 @@
             android:text="Memo" />
 
         <Button
-            android:id="@+id/btn2"
+            android:id="@+id/homebtn"
             android:layout_width="123dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -36,7 +36,7 @@
             android:text="Home" />
 
         <Button
-            android:id="@+id/btn3"
+            android:id="@+id/mypagebtn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="3"

@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.findNavController
 
 
 class MypageFragment : Fragment() {
@@ -15,8 +17,17 @@ class MypageFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mypage, container, false)
+        val view = inflater.inflate(R.layout.fragment_mypage, container, false)
+
+        view.findViewById<Button>(R.id.homebtn).setOnClickListener {
+            it.findNavController().navigate(R.id.action_mypageFragment_to_homeFragment)
+        }
+
+        view.findViewById<Button>(R.id.memobtn).setOnClickListener {
+            it.findNavController().navigate(R.id.action_mypageFragment_to_memoFragment)
+        }
+
+        return view
     }
 
 }

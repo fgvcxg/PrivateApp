@@ -11,6 +11,8 @@ import androidx.navigation.findNavController
 
 class MemoFragment : Fragment() {
 
+    val dataModelList = mutableListOf<DataModel>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

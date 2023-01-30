@@ -6,15 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".MemoFragment">
 
-    <TextView
-        android:id="@+id/textView"
+    <ListView
+        android:id="@+id/memoLV"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Memo Fragment"
         android:layout_marginBottom="80dp"
-        android:textSize="32sp" />
+        tools:layout_editor_absoluteX="-200dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/writeBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.878" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         app:layout_constraintBottom_toBottomOf="parent">
